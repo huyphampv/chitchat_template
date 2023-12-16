@@ -1,12 +1,27 @@
-// function tenHam(thamso) {
-//     console.log(thamso);
-//     return "tien";
-// }
+const navLinksItem = document.querySelectorAll(".nav-links__item")
 
-// nhanvien1 = tenHam("Harry Potter");
-// console.log(nhanvien1);
+navLinksItem.forEach(item => item.addEventListener("click", activeNavLink))
 
-const shipper = () => {
-    return 1000;
+// function active nav link
+function activeNavLink() {
+    removeActiveNavLink()
+    this.classList.add('active')
 }
-console.log(shipper());
+
+// function active nav link
+function removeActiveNavLink() {
+    navLinksItem.forEach(item => {
+        if (item.classList.contains("active")) {
+            item.classList.remove("active")
+        }
+    })
+}
+
+
+// Toggle mobile menu
+const mobileToggle = document.getElementById("mobile-toggle")
+const mobileMenu = document.getElementById("mobile-menu")
+
+mobileToggle.addEventListener("click", function () {
+    mobileMenu.classList.toggle("active")
+})

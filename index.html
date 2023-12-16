@@ -1,82 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Chat Bot Landing Page</title>
-        <!-- LINK CSS -->
-        <link rel="stylesheet" href="./style.css" />
-        <!-- LINK FONT AWESOME -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        />
-        <!-- LINK BOOTSTRAP -->
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
-    </head>
-    <body>
-        <!-- HEADER -->
-        <header>
-            <!-- Navigation -->
-            <nav class="container">
-                <a class="logo" href="/">chitchat <span>.ai</span></a>
 
-                <ul class="nav-links">
-                    <li class="nav-links__item active"><a href="#">Home</a></li>
-                    <li class="nav-links__item">
-                        <a href="#">How it Works</a>
-                    </li>
-                    <li class="nav-links__item"><a href="#">Features</a></li>
-                    <li class="nav-links__item"><a href="#">Pricing</a></li>
-                    <li class="nav-links__item"><a href="#">Blog</a></li>
-                </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Bot Landing Page</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- LINK FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- LINK BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
+</head>
 
-                <a class="btn" href="#">Get Demo</a>
-            </nav>
-            <!-- END NAVIGATION -->
-        </header>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Navigation -->
+        <nav class="container">
+            <a class="logo" href="/">chitchat <span>.ai</span></a>
 
-        <main>
-            <section class="banner">
+            <input hidden class="nav-toggle__input" id="nav-toggle" type="checkbox" />
+            <label id="mobile-toggle" for="nav-toggle" class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+
+            <ul class="nav-links" id="mobile-menu">
+                <li class="nav-links__item"><a href="#">Home</a></li>
+                <li class="nav-links__item">
+                    <a href="#">How it Works</a>
+                </li>
+                <li class="nav-links__item"><a href="#">Features</a></li>
+                <li class="nav-links__item"><a href="#">Pricing</a></li>
+                <li class="nav-links__item"><a href="#">Blog</a></li>
+            </ul>
+
+            <a class="btn nav-btn-getdemo" href="#">Get Demo</a>
+        </nav>
+        <!-- END NAVIGATION -->
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="container">
                 <!-- HEADER CONTENT -->
                 <p class="title">A Personalized, Smart,</p>
                 <p class="title">AI-Powered Chat Assistant</p>
                 <div class="info">
                     <div class="info-automate">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="18"
-                            height="18"
-                            viewBox="0 0 18 18"
-                            fill="none"
-                        >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                             <circle cx="9" cy="9" r="9" fill="#283A4B" />
-                            <path
-                                d="M6 9L8 11L13 6"
-                                stroke="#9085D1"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
+                            <path d="M6 9L8 11L13 6" stroke="#9085D1" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p class="info-automate__content">
                             Automate your sales & support
                         </p>
                     </div>
                     <div class="info-works">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="18"
-                            height="18"
-                            viewBox="0 0 18 18"
-                            fill="none"
-                        >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                             <circle cx="9" cy="9" r="9" fill="#283A4B" />
-                            <path
-                                d="M6 9L8 11L13 6"
-                                stroke="#9085D1"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
+                            <path d="M6 9L8 11L13 6" stroke="#9085D1" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <p class="info-works__content">
                             Works 24/7, even while you sleep!
@@ -84,233 +70,48 @@
                     </div>
                 </div>
                 <div class="form">
-                    <input
-                        class="form-email"
-                        type="text"
-                        name="emailFrom"
-                        id="emailFrom"
-                        placeholder="Input your email..."
-                    />
+                    <input class="form-email" type="text" name="emailFrom" id="emailFrom"
+                        placeholder="Input your email..." />
                     <a class="btn form-btn" href="">Try for free</a>
                 </div>
                 <!-- END HEADER CONTENT -->
 
                 <!-- HEADER IMAGE -->
-                <div class="img-header">
-                    <div class="img-header__left">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="246"
-                            height="264"
-                            viewBox="0 0 246 264"
-                            fill="none"
-                        >
-                            <path
-                                d="M144.765 1C178.6 22.1242 245.947 83.0623 244.658 157.821C244.658 205 196.859 306.364 61.5212 242.676C42.5 233.724 5.85696 211.5 1.37081 184.136C-2.32723 161.58 20.9197 136.338 103.412 213.675"
-                                stroke="#5CABF3"
-                            />
-                        </svg>
-                        <img
-                            class="person-img"
-                            src="./img/girl-smile.png"
-                            alt=""
-                        />
-                        <img
-                            class="facebook-img"
-                            src="./img/facebook.png"
-                            alt=""
-                        />
-                        <img
-                            class="instagram-img"
-                            src="./img/instagram.png"
-                            alt=""
-                        />
-                        <button class="sale-btn">Sale</button>
-                        <button class="marketing-btn">Marketing</button>
-                    </div>
-
-                    <div class="img-header-short">
-                        <div class="img-header__mid">
-                            <div class="img-header-profile--active">
-                                <img
-                                    class="avatar--active"
-                                    src="./img/Ellipse 6.png"
-                                    alt=""
-                                />
-                                <div class="text--active">
-                                    <div class="name--active">Peter Moor</div>
-                                    <div class="border-long--active"></div>
-                                    <div class="border-short--active"></div>
-                                </div>
-                            </div>
-                            <div class="img-header-profile">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 26 26"
-                                    fill="none"
-                                >
-                                    <circle
-                                        cx="13"
-                                        cy="13"
-                                        r="13"
-                                        fill="#E8E9EF"
-                                    />
-                                </svg>
-                                <div class="text">
-                                    <div class="name">Josh Davy</div>
-                                    <div class="border-long"></div>
-                                    <div class="border-short"></div>
-                                </div>
-                            </div>
-                            <div class="img-header-profile">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 26 26"
-                                    fill="none"
-                                >
-                                    <circle
-                                        cx="13"
-                                        cy="13"
-                                        r="13"
-                                        fill="#E8E9EF"
-                                    />
-                                </svg>
-                                <div class="text">
-                                    <div class="name">Josh Davy</div>
-                                    <div class="border-long"></div>
-                                    <div class="border-short"></div>
-                                </div>
-                            </div>
-                            <div class="img-header-profile">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 26 26"
-                                    fill="none"
-                                >
-                                    <circle
-                                        cx="13"
-                                        cy="13"
-                                        r="13"
-                                        fill="#E8E9EF"
-                                    />
-                                </svg>
-                                <div class="text">
-                                    <div class="name">Adam Lyth</div>
-                                    <div class="border-long"></div>
-                                    <div class="border-short"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-header__mid">
-                            <div class="img-header-profile">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 26 26"
-                                    fill="none"
-                                >
-                                    <circle
-                                        cx="13"
-                                        cy="13"
-                                        r="13"
-                                        fill="#E8E9EF"
-                                    />
-                                </svg>
-                                <div class="text">
-                                    <div class="name">Tom Currun</div>
-                                    <div class="border-long"></div>
-                                    <div class="border-short"></div>
-                                </div>
-                            </div>
-                            <div class="img-header-profile">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 26 26"
-                                    fill="none"
-                                >
-                                    <circle
-                                        cx="13"
-                                        cy="13"
-                                        r="13"
-                                        fill="#E8E9EF"
-                                    />
-                                </svg>
-                                <div class="text">
-                                    <div class="name">Peter Malan</div>
-                                    <div class="border-long"></div>
-                                    <div class="border-short"></div>
-                                </div>
-                            </div>
-                            <div class="img-header-profile">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 26 26"
-                                    fill="none"
-                                >
-                                    <circle
-                                        cx="13"
-                                        cy="13"
-                                        r="13"
-                                        fill="#E8E9EF"
-                                    />
-                                </svg>
-                                <div class="text">
-                                    <div class="name">Ben Stokes</div>
-                                    <div class="border-long"></div>
-                                    <div class="border-short"></div>
-                                </div>
-                            </div>
-                            <div class="img-header-profile">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="26"
-                                    viewBox="0 0 26 26"
-                                    fill="none"
-                                >
-                                    <circle
-                                        cx="13"
-                                        cy="13"
-                                        r="13"
-                                        fill="#E8E9EF"
-                                    />
-                                </svg>
-                                <div class="text">
-                                    <div class="name">Ben Stokes</div>
-                                    <div class="border-long"></div>
-                                    <div class="border-short"></div>
-                                </div>
-                            </div>
+                <div class="grid">
+                    <div class="grid-cols lg-grid-item__cols-4 img-header">
+                        <div class="img-header__item">
+                            <img src="./img/banner01.png" />
                         </div>
                     </div>
 
-                    <div class="img-header__right"></div>
+                    <div class="grid-cols lg-grid-item__cols-4 img-header">
+                        <div class="img-header__item">
+                            <img src="./img/banner02.png" />
+                        </div>
+
+                    </div>
+
+                    <div class="grid-cols lg-grid-item__cols-4 img-header">
+                        <div class="img-header__item">
+                            <img src="./img/banner03.png" />
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <!-- CHAT CAMPAIGN -->
+        </section>
+        <!-- CHAT CAMPAIGN -->
 
-            <!-- CONVERSATION -->
+        <!-- CONVERSATION -->
 
-            <!-- SUPPORT -->
+        <!-- SUPPORT -->
 
-            <!-- CLIENT TALK -->
+        <!-- CLIENT TALK -->
 
-            <!-- SUBSCRIBE -->
-        </main>
+        <!-- SUBSCRIBE -->
+    </main>
 
-        <!-- FOOTER -->
-        <footer></footer>
-        <script src="./script.js"></script>
-    </body>
+    <!-- FOOTER -->
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+
 </html>
